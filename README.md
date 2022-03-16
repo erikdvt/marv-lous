@@ -1,2 +1,2 @@
-# marvel-lous
+# marv-lous
 Browse and search Marvel Comics' database
