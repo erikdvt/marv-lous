@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LandingPageViewController: UIViewController {
     
     private var comics: ComicDataWrapper?
     private var httpHeaders: [String:String] = ["limit": "2",
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
             switch result {
             case .success(let comicsArray):
                 self?.comics = comicsArray
-                print(comicsArray.data!.results!.description)
+                print(comicsArray.data.results.description)
             case .failure(let error):
                 print(error)
             }

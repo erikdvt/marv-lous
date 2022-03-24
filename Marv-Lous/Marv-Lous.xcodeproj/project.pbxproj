@@ -10,7 +10,7 @@
 		AB2B863327E47F9500B99ED6 /* ComicDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2B863227E47F9500B99ED6 /* ComicDataWrapper.swift */; };
 		AB2ECEAD27E26F6F001BB551 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2ECEAC27E26F6F001BB551 /* AppDelegate.swift */; };
 		AB2ECEAF27E26F6F001BB551 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2ECEAE27E26F6F001BB551 /* SceneDelegate.swift */; };
-		AB2ECEB127E26F6F001BB551 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2ECEB027E26F6F001BB551 /* ViewController.swift */; };
+		AB2ECEB127E26F6F001BB551 /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2ECEB027E26F6F001BB551 /* LandingPageViewController.swift */; };
 		AB2ECEB427E26F6F001BB551 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2ECEB227E26F6F001BB551 /* Main.storyboard */; };
 		AB2ECEB627E26F70001BB551 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB2ECEB527E26F70001BB551 /* Assets.xcassets */; };
 		AB2ECEB927E26F71001BB551 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2ECEB727E26F71001BB551 /* LaunchScreen.storyboard */; };
@@ -46,7 +46,7 @@
 		AB2ECEA927E26F6F001BB551 /* Marv-Lous.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Marv-Lous.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB2ECEAC27E26F6F001BB551 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB2ECEAE27E26F6F001BB551 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AB2ECEB027E26F6F001BB551 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AB2ECEB027E26F6F001BB551 /* LandingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
 		AB2ECEB327E26F6F001BB551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB2ECEB527E26F70001BB551 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB2ECEB827E26F71001BB551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -187,7 +187,7 @@
 		AB2ECEE727E2734A001BB551 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AB2ECEB027E26F6F001BB551 /* ViewController.swift */,
+				AB2ECEB027E26F6F001BB551 /* LandingPageViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -344,7 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB2ECEB127E26F6F001BB551 /* ViewController.swift in Sources */,
+				AB2ECEB127E26F6F001BB551 /* LandingPageViewController.swift in Sources */,
 				AB2ECEE127E27165001BB551 /* URLSession+Extension.swift in Sources */,
 				AB2ECEAD27E26F6F001BB551 /* AppDelegate.swift in Sources */,
 				AB2B863327E47F9500B99ED6 /* ComicDataWrapper.swift in Sources */,

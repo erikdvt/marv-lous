@@ -5,26 +5,26 @@
 //  Created by Erik Egers on 2022/03/18.
 //
 
-import Foundation
+import Foundation 
 
 // MARK: - ComicDataWrapper
 struct ComicDataWrapper: Codable {
-    let code: Int?
-    let status: String?
-    let copyright: String?
-    let attributionText: String?
-    let attributionHTML: String?
-    let data: ComicDataContainer?
-    let etag: String?
+    let code: Int
+    let status: String
+    let copyright: String
+    let attributionText: String
+    let attributionHTML: String
+    let data: ComicDataContainer
+    let etag: String
 }
 
 // MARK: - ComicDataContainer
 struct ComicDataContainer: Codable {
-    let offset: Int?
-    let limit: Int?
-    let total: Int?
-    let count: Int?
-    let results: [Comic]?
+    let offset: Int
+    let limit: Int
+    let total: Int
+    let count: Int
+    let results: [Comic]
 }
 
 // MARK: - Comic
