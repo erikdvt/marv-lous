@@ -7,7 +7,6 @@
 
 import Foundation
 
-// Constant values that never change and need to be used anywhere in the app
 struct Constants {
     static let comicsURL = URL(string: "https://gateway.marvel.com/v1/public/comics")
     static let publicAPIKey = "2a9ac5901f9444c283e85fbd2849e3f6"
