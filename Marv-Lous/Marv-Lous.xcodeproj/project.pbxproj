@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB2B863327E47F9500B99ED6 /* ComicDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2B863227E47F9500B99ED6 /* ComicDataWrapper.swift */; };
 		AB2ECEAD27E26F6F001BB551 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2ECEAC27E26F6F001BB551 /* AppDelegate.swift */; };
 		AB2ECEAF27E26F6F001BB551 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2ECEAE27E26F6F001BB551 /* SceneDelegate.swift */; };
-		AB2ECEB127E26F6F001BB551 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2ECEB027E26F6F001BB551 /* ViewController.swift */; };
+		AB2ECEB127E26F6F001BB551 /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2ECEB027E26F6F001BB551 /* LandingPageViewController.swift */; };
 		AB2ECEB427E26F6F001BB551 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2ECEB227E26F6F001BB551 /* Main.storyboard */; };
 		AB2ECEB627E26F70001BB551 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB2ECEB527E26F70001BB551 /* Assets.xcassets */; };
 		AB2ECEB927E26F71001BB551 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2ECEB727E26F71001BB551 /* LaunchScreen.storyboard */; };
 		AB2ECEC427E26F71001BB551 /* Marv_LousTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2ECEC327E26F71001BB551 /* Marv_LousTests.swift */; };
 		AB2ECECE27E26F71001BB551 /* Marv_LousUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2ECECD27E26F71001BB551 /* Marv_LousUITests.swift */; };
 		AB2ECED027E26F71001BB551 /* Marv_LousUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2ECECF27E26F71001BB551 /* Marv_LousUITestsLaunchTests.swift */; };
-		AB2ECEDE27E27138001BB551 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2ECEDD27E27138001BB551 /* UserModel.swift */; };
 		AB2ECEE127E27165001BB551 /* URLSession+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2ECEE027E27165001BB551 /* URLSession+Extension.swift */; };
 		AB2ECEE327E27172001BB551 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2ECEE227E27172001BB551 /* Constants.swift */; };
+		AB8EAD7627EC3BAD005111A2 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8EAD7527EC3BAD005111A2 /* APIError.swift */; };
+		AB8EAD7827EC580B005111A2 /* CommonCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8EAD7727EC580B005111A2 /* CommonCrypto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,10 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB2B863227E47F9500B99ED6 /* ComicDataWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicDataWrapper.swift; sourceTree = "<group>"; };
+		AB2B863427E784DB00B99ED6 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		AB2ECEA927E26F6F001BB551 /* Marv-Lous.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Marv-Lous.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB2ECEAC27E26F6F001BB551 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB2ECEAE27E26F6F001BB551 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AB2ECEB027E26F6F001BB551 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AB2ECEB027E26F6F001BB551 /* LandingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
 		AB2ECEB327E26F6F001BB551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB2ECEB527E26F70001BB551 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB2ECEB827E26F71001BB551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,9 +56,10 @@
 		AB2ECEC927E26F71001BB551 /* Marv-LousUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Marv-LousUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB2ECECD27E26F71001BB551 /* Marv_LousUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marv_LousUITests.swift; sourceTree = "<group>"; };
 		AB2ECECF27E26F71001BB551 /* Marv_LousUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marv_LousUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		AB2ECEDD27E27138001BB551 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		AB2ECEE027E27165001BB551 /* URLSession+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Extension.swift"; sourceTree = "<group>"; };
 		AB2ECEE227E27172001BB551 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AB8EAD7527EC3BAD005111A2 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		AB8EAD7727EC580B005111A2 /* CommonCrypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonCrypto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +140,8 @@
 		AB2ECEDC27E27126001BB551 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AB2ECEDD27E27138001BB551 /* UserModel.swift */,
+				AB2B863227E47F9500B99ED6 /* ComicDataWrapper.swift */,
+				AB8EAD7527EC3BAD005111A2 /* APIError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -144,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				AB2ECEE027E27165001BB551 /* URLSession+Extension.swift */,
+				AB8EAD7727EC580B005111A2 /* CommonCrypto.swift */,
 				AB2ECEE227E27172001BB551 /* Constants.swift */,
 			);
 			path = Utilities;
@@ -160,6 +167,7 @@
 		AB2ECEE527E271AC001BB551 /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				AB2B863427E784DB00B99ED6 /* Config.xcconfig */,
 				AB2ECEBA27E26F71001BB551 /* Info.plist */,
 				AB2ECEAC27E26F6F001BB551 /* AppDelegate.swift */,
 				AB2ECEAE27E26F6F001BB551 /* SceneDelegate.swift */,
@@ -179,7 +187,7 @@
 		AB2ECEE727E2734A001BB551 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AB2ECEB027E26F6F001BB551 /* ViewController.swift */,
+				AB2ECEB027E26F6F001BB551 /* LandingPageViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -336,12 +344,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB2ECEB127E26F6F001BB551 /* ViewController.swift in Sources */,
+				AB2ECEB127E26F6F001BB551 /* LandingPageViewController.swift in Sources */,
 				AB2ECEE127E27165001BB551 /* URLSession+Extension.swift in Sources */,
 				AB2ECEAD27E26F6F001BB551 /* AppDelegate.swift in Sources */,
-				AB2ECEDE27E27138001BB551 /* UserModel.swift in Sources */,
+				AB2B863327E47F9500B99ED6 /* ComicDataWrapper.swift in Sources */,
 				AB2ECEAF27E26F6F001BB551 /* SceneDelegate.swift in Sources */,
 				AB2ECEE327E27172001BB551 /* Constants.swift in Sources */,
+				AB8EAD7627EC3BAD005111A2 /* APIError.swift in Sources */,
+				AB8EAD7827EC580B005111A2 /* CommonCrypto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +526,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WX693MMMLG;
@@ -531,8 +542,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dvt.eegers.Marv-Lous";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dvt.eegers.Marvlous;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -544,6 +556,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WX693MMMLG;
@@ -559,8 +572,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dvt.eegers.Marv-Lous";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dvt.eegers.Marvlous;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
