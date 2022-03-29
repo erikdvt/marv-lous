@@ -21,6 +21,7 @@
 		AB2ECEE327E27172001BB551 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2ECEE227E27172001BB551 /* Constants.swift */; };
 		AB8EAD7627EC3BAD005111A2 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8EAD7527EC3BAD005111A2 /* APIError.swift */; };
 		AB8EAD7827EC580B005111A2 /* CommonCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8EAD7727EC580B005111A2 /* CommonCrypto.swift */; };
+		ABC8DE4627EDC69C007E60A2 /* ComicTabelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC8DE4527EDC69C007E60A2 /* ComicTabelViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		AB2ECEE227E27172001BB551 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AB8EAD7527EC3BAD005111A2 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		AB8EAD7727EC580B005111A2 /* CommonCrypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonCrypto.swift; sourceTree = "<group>"; };
+		ABC8DE4527EDC69C007E60A2 /* ComicTabelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ComicTabelViewCell.swift; path = "Marv-Lous/Controllers/ComicTabelViewCell.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				AB2ECEB227E26F6F001BB551 /* Main.storyboard */,
+				ABC8DE4527EDC69C007E60A2 /* ComicTabelViewCell.swift */,
 				AB2ECEB727E26F71001BB551 /* LaunchScreen.storyboard */,
 			);
 			path = UserInterfaces;
@@ -346,6 +349,7 @@
 			files = (
 				AB2ECEB127E26F6F001BB551 /* LandingPageViewController.swift in Sources */,
 				AB2ECEE127E27165001BB551 /* URLSession+Extension.swift in Sources */,
+				ABC8DE4627EDC69C007E60A2 /* ComicTabelViewCell.swift in Sources */,
 				AB2ECEAD27E26F6F001BB551 /* AppDelegate.swift in Sources */,
 				AB2B863327E47F9500B99ED6 /* ComicDataWrapper.swift in Sources */,
 				AB2ECEAF27E26F6F001BB551 /* SceneDelegate.swift in Sources */,
