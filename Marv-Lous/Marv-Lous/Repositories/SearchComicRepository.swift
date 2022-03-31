@@ -25,10 +25,13 @@ class SearchComicRepository: SearchComicRepositoryType {
         
         let hashedString = "\(timeStamp)\(Constants.privateAPIKey)\(Constants.publicAPIKey)"
         
-        let urlString = String(format: "https://gateway.marvel.com:443/v1/public/comics?apikey=%@&ts=%@&hash=%@&limit=10",
-                         Constants.publicAPIKey,
-                         String(timeStamp),
-                         hashedString.md5)
+        let queries = "format=comic&orderBy=-modified&limit=25"
+        
+        let urlString = String(format: "https://gateway.marvel.com:443/v1/public/comics?%@&apikey=%@&ts=%@&hash=%@",
+                               queries,
+                               Constants.publicAPIKey,
+                               String(timeStamp),
+                               hashedString.md5)
         
         return (URL(string: urlString))
     }
