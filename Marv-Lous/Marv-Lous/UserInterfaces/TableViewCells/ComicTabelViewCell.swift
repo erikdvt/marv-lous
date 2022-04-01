@@ -17,7 +17,7 @@ class ComicTableViewCell: UITableViewCell {
         guard let thumbnailExtension = comic.thumbnail?.extension else { return }
         guard let comicName = comic.title else { return }
         
-        let comicThumbnailURL = buildImageURL(thumbnailPath: thumbnailPath, thumbnailExtension: thumbnailExtension)
+        let comicThumbnailURL = thumbnailPath.buildImageURL(quality: "detail", imageExtension: thumbnailExtension).convertToHttps
         
         comicImage.loadImageFromURL(imageURL: comicThumbnailURL)
         comicNameLabel.text = comicName
