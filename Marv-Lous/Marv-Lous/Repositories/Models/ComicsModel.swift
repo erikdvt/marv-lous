@@ -8,7 +8,7 @@
 import Foundation 
 
 // MARK: - ComicDataWrapper
-struct ComicDataWrapper: Codable {
+struct ComicsModel: Codable {
     let code: Int
     let status: String
     let copyright: String
