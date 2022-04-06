@@ -19,11 +19,14 @@
 		AB2ECED027E26F71001BB551 /* Marv_LousUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2ECECF27E26F71001BB551 /* Marv_LousUITestsLaunchTests.swift */; };
 		AB2ECEE127E27165001BB551 /* SearchComicRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2ECEE027E27165001BB551 /* SearchComicRepository.swift */; };
 		AB2ECEE327E27172001BB551 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2ECEE227E27172001BB551 /* Constants.swift */; };
+		AB3A792927F7155B0086FA56 /* LoginPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3A792827F7155B0086FA56 /* LoginPageViewModel.swift */; };
+		AB3A792B27F715840086FA56 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3A792A27F715840086FA56 /* LoginPageViewController.swift */; };
 		AB46FB7A27F4748F000AEF91 /* ServiceErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB46FB7927F4748F000AEF91 /* ServiceErrors.swift */; };
 		AB52FEE927F352D6008B2326 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB52FEE827F352D6008B2326 /* UIImageViewExtension.swift */; };
 		AB52FEEF27F35F0D008B2326 /* LandingPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB52FEEE27F35F0D008B2326 /* LandingPageViewModel.swift */; };
 		AB8EAD7627EC3BAD005111A2 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8EAD7527EC3BAD005111A2 /* APIError.swift */; };
 		AB8EAD7827EC580B005111A2 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8EAD7727EC580B005111A2 /* StringExtension.swift */; };
+		ABA3BEAD27FD78EE001C09A6 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA3BEAC27FD78EE001C09A6 /* UIViewControllerExtension.swift */; };
 		ABC8DE4627EDC69C007E60A2 /* ComicTabelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC8DE4527EDC69C007E60A2 /* ComicTabelViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,11 +65,14 @@
 		AB2ECECF27E26F71001BB551 /* Marv_LousUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marv_LousUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AB2ECEE027E27165001BB551 /* SearchComicRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchComicRepository.swift; sourceTree = "<group>"; };
 		AB2ECEE227E27172001BB551 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AB3A792827F7155B0086FA56 /* LoginPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewModel.swift; sourceTree = "<group>"; };
+		AB3A792A27F715840086FA56 /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
 		AB46FB7927F4748F000AEF91 /* ServiceErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceErrors.swift; sourceTree = "<group>"; };
 		AB52FEE827F352D6008B2326 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		AB52FEEE27F35F0D008B2326 /* LandingPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewModel.swift; sourceTree = "<group>"; };
 		AB8EAD7527EC3BAD005111A2 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		AB8EAD7727EC580B005111A2 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		ABA3BEAC27FD78EE001C09A6 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		ABC8DE4527EDC69C007E60A2 /* ComicTabelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ComicTabelViewCell.swift; path = "Marv-Lous/UserInterfaces/TableViewCells/ComicTabelViewCell.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -198,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				AB2ECEB027E26F6F001BB551 /* LandingPageViewController.swift */,
+				AB3A792A27F715840086FA56 /* LoginPageViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -214,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				AB52FEE827F352D6008B2326 /* UIImageViewExtension.swift */,
+				ABA3BEAC27FD78EE001C09A6 /* UIViewControllerExtension.swift */,
 				AB8EAD7727EC580B005111A2 /* StringExtension.swift */,
 			);
 			path = Extensions;
@@ -223,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				AB52FEEE27F35F0D008B2326 /* LandingPageViewModel.swift */,
+				AB3A792827F7155B0086FA56 /* LoginPageViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -398,9 +407,11 @@
 			files = (
 				AB52FEE927F352D6008B2326 /* UIImageViewExtension.swift in Sources */,
 				AB2ECEB127E26F6F001BB551 /* LandingPageViewController.swift in Sources */,
+				ABA3BEAD27FD78EE001C09A6 /* UIViewControllerExtension.swift in Sources */,
 				AB2ECEE127E27165001BB551 /* SearchComicRepository.swift in Sources */,
 				ABC8DE4627EDC69C007E60A2 /* ComicTabelViewCell.swift in Sources */,
 				AB46FB7A27F4748F000AEF91 /* ServiceErrors.swift in Sources */,
+				AB3A792B27F715840086FA56 /* LoginPageViewController.swift in Sources */,
 				AB2ECEAD27E26F6F001BB551 /* AppDelegate.swift in Sources */,
 				AB2B863327E47F9500B99ED6 /* ComicsModel.swift in Sources */,
 				AB2ECEAF27E26F6F001BB551 /* SceneDelegate.swift in Sources */,
@@ -408,6 +419,7 @@
 				AB8EAD7627EC3BAD005111A2 /* APIError.swift in Sources */,
 				AB8EAD7827EC580B005111A2 /* StringExtension.swift in Sources */,
 				AB52FEEF27F35F0D008B2326 /* LandingPageViewModel.swift in Sources */,
+				AB3A792927F7155B0086FA56 /* LoginPageViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
