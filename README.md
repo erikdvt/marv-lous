@@ -3,7 +3,7 @@ Browse and search Marvel Comics' database
 
 Build badges:
 
-https://app.bitrise.io/app/d6056ef0974d9fd3/status.svg?token=67V9Hp3n-KmPNHSKJRc04A&branch=develop
+![bitriseBadge](https://app.bitrise.io/app/d6056ef0974d9fd3/status.svg?token=67V9Hp3n-KmPNHSKJRc04A&branch=develop)
 
 Git branching strategy:
 
