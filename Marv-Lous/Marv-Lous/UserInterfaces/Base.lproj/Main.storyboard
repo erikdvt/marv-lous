@@ -25,12 +25,6 @@
                                             <constraint firstAttribute="height" constant="100" id="wln-cA-yry"/>
                                         </constraints>
                                     </imageView>
-                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1j-WL-gNk">
-                                        <rect key="frame" x="0.0" y="120" width="354" height="0.0"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.55686277149999996" green="0.1607843041" blue="0.14509806040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="xKg-RF-pLa">
                                         <rect key="frame" x="0.0" y="140.5" width="354" height="120"/>
                                         <subviews>
@@ -78,8 +72,7 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="xKg-RF-pLa" firstAttribute="top" secondItem="z1j-WL-gNk" secondAttribute="bottom" constant="20.5" id="EY7-bi-jil"/>
-                                    <constraint firstItem="z1j-WL-gNk" firstAttribute="top" secondItem="Vvt-EA-tO0" secondAttribute="bottom" constant="20" id="Pbu-g8-uca"/>
+                                    <constraint firstItem="xKg-RF-pLa" firstAttribute="top" secondItem="Vvt-EA-tO0" secondAttribute="bottom" constant="40.5" id="Tuw-Rw-r9x"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -95,7 +88,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="loginErrorDescriptionLabel" destination="z1j-WL-gNk" id="aA5-ls-nbO"/>
                         <outlet property="passwordTextField" destination="neR-w5-4wJ" id="PcY-m9-FBI"/>
                         <outlet property="usernameTextField" destination="jqY-Zh-2wY" id="wYh-2Z-hnW"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="goToLandingPage" modalPresentationStyle="fullScreen" id="ORf-fJ-tOu"/>

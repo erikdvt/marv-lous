@@ -25,36 +25,16 @@ class LoginPageViewModel {
         self.username = username
         self.password = password
         
-        switch credentialsInput() {
-        case .correct:
-            self.delegate?.navigateToLandingPage()
-        case .incorrect:
-            return
-        }
-    }
-    
-    func credentialsInput() -> CredentialsInputStatus {
         if username.isEmpty && password.isEmpty {
             self.delegate?.showError("Please enter username and password.")
-            return .incorrect
         } else if username.isEmpty {
             self.delegate?.showError("Username field is empty.")
-            return .incorrect
         } else if password.isEmpty {
             self.delegate?.showError("Password field is empty.")
-            return .incorrect
         } else if (username == "Admin" && password == "TestPass123") {
-            return .correct
+            self.delegate?.navigateToLandingPage()
         } else {
             self.delegate?.showError("Invalid username and/or password.")
-            return .incorrect
         }
-    }
-}
-
-extension LoginPageViewModel {
-    enum CredentialsInputStatus {
-        case correct
-        case incorrect
     }
 }

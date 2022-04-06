@@ -10,11 +10,10 @@ import UIKit
 
 class LoginPageViewController: UIViewController {
     
-    private lazy var loginPageViewModel = LoginPageViewModel(delegate: self)
-    
     @IBOutlet private weak var usernameTextField: UITextField!
     @IBOutlet private weak var passwordTextField: UITextField!
-    @IBOutlet weak var loginErrorDescriptionLabel: UILabel!
+    
+    private lazy var loginPageViewModel = LoginPageViewModel(delegate: self)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,10 +41,6 @@ extension LoginPageViewController: UITextFieldDelegate {
         return true
     }
 
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        loginErrorDescriptionLabel.isHidden = true
-    }
-
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
@@ -55,8 +50,9 @@ extension LoginPageViewController: LoginPageViewModelDelegate {
     func showError(_ error: String) {
         usernameTextField.text = ""
         passwordTextField.text = ""
-        loginErrorDescriptionLabel.text = error
-        loginErrorDescriptionLabel.isHidden = false
+        self.showAlert(title: "Login unsuccesful",
+                       message: error,
+                       button: "Retry")
     }
     
     func navigateToLandingPage() {
