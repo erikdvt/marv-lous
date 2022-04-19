@@ -17,6 +17,7 @@ class LandingPageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Discover"
         setupTableView()
         viewModel.fetchComicList()
     }
@@ -41,6 +42,18 @@ extension LandingPageViewController: UITableViewDelegate, UITableViewDataSource 
         comicsDataCell.setNeedsLayout()
         
         return comicsDataCell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goToDetailView", sender: self)
+
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? DetailsViewController {
+            guard let comicIndex = comicsTableView.indexPathForSelectedRow?.row else { return }
+            destination.singleComic = viewModel.comic(atIndex: comicIndex)
+        }
     }
 }
 

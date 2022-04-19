@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login Page View Controller-->
+        <!--Item-->
         <scene sceneID="o7d-x5-GLG">
             <objects>
                 <viewController id="jA5-qg-m5I" customClass="LoginPageViewController" customModule="Marv_Lous" customModuleProvider="target" sceneMemberID="viewController">
@@ -87,15 +87,16 @@
                             <constraint firstItem="Yz4-t3-eA6" firstAttribute="top" secondItem="8S2-Qb-sF4" secondAttribute="top" id="w0T-Lh-4kk"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="UFt-NH-N4T"/>
                     <connections>
                         <outlet property="passwordTextField" destination="neR-w5-4wJ" id="PcY-m9-FBI"/>
                         <outlet property="usernameTextField" destination="jqY-Zh-2wY" id="wYh-2Z-hnW"/>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="goToLandingPage" modalPresentationStyle="fullScreen" id="ORf-fJ-tOu"/>
+                        <segue destination="mrm-SA-eVv" kind="presentation" identifier="goToLandingPage" modalPresentationStyle="fullScreen" id="ORf-fJ-tOu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d5F-Ta-frE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-852.17391304347836" y="10.714285714285714"/>
+            <point key="canvasLocation" x="57.971014492753625" y="10.714285714285714"/>
         </scene>
         <!--Landing Page View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -105,9 +106,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1Hx-Sm-LwZ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1Hx-Sm-LwZ">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ComicCell" rowHeight="629" id="JD5-Tg-JQG" customClass="ComicTableViewCell" customModule="Marv_Lous" customModuleProvider="target">
@@ -150,19 +150,134 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1Hx-Sm-LwZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3nc-Ug-Gg1"/>
+                            <constraint firstAttribute="bottom" secondItem="1Hx-Sm-LwZ" secondAttribute="bottom" id="4Rg-hK-wJL"/>
+                            <constraint firstItem="1Hx-Sm-LwZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Asp-tJ-NVa"/>
+                            <constraint firstItem="1Hx-Sm-LwZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Eah-zA-aih"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="M61-f1-fY7"/>
                     <connections>
                         <outlet property="comicsTableView" destination="1Hx-Sm-LwZ" id="uuH-aQ-b3i"/>
+                        <segue destination="ANw-KG-q25" kind="show" identifier="goToDetailView" id="2ta-6L-8FG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="11.383928571428571"/>
+            <point key="canvasLocation" x="2521.739130434783" y="10.714285714285714"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="FcF-TM-MZa">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="ANw-KG-q25" customClass="DetailsViewController" customModule="Marv_Lous" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IFh-gr-SZF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbD-3j-noO">
+                                <rect key="frame" x="186" y="438" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HAT-J5-M0u"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="comicTitle" destination="nbD-3j-noO" id="2gM-jx-9De"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aQt-Up-tsX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3323" y="11"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="XFS-Y7-bS7">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="mrm-SA-eVv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5i1-dy-b2n">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="MIA-2D-i8T" kind="relationship" relationship="viewControllers" id="ZOE-cf-O7I"/>
+                        <segue destination="thQ-Fg-3ru" kind="relationship" relationship="viewControllers" id="IY6-p6-OPY"/>
+                        <segue destination="hef-ci-87F" kind="relationship" relationship="viewControllers" id="X0l-is-gbm"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cxa-MT-g9z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857" y="11"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="7ZP-7G-jj5">
+            <objects>
+                <viewController title="Search" id="hef-ci-87F" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z6h-en-zLy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="yKb-Od-l9H"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Search" id="ULM-F3-F34"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CYy-TY-m2P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1667" y="-713"/>
+        </scene>
+        <!--Discover-->
+        <scene sceneID="us3-5c-4fo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MIA-2D-i8T" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Discover" id="CHO-yj-LQ8"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TlZ-De-cE9">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Tud-dB-u2S"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QHx-PC-PdX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1668" y="11"/>
+        </scene>
+        <!--Favourites-->
+        <scene sceneID="zM1-uE-tLS">
+            <objects>
+                <viewController title="Favourites" id="thQ-Fg-3ru" customClass="FavouritesViewController" customModule="Marv_Lous" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="at2-qA-YMe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Zti-dW-NtE"/>
+                        <color key="backgroundColor" systemColor="tintColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favourites" id="l4j-I9-elL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7EK-ly-SHC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1667" y="763"/>
         </scene>
     </scenes>
+    <color key="tintColor" name="Primary"/>
     <resources>
+        <namedColor name="Primary">
+            <color red="0.7803921568627451" green="0.14509803921568629" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
