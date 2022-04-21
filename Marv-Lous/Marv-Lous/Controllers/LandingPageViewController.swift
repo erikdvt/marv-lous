@@ -52,7 +52,7 @@ extension LandingPageViewController: UITableViewDelegate, UITableViewDataSource 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? DetailsViewController {
             guard let comicIndex = comicsTableView.indexPathForSelectedRow?.row else { return }
-            destination.singleComic = viewModel.comic(atIndex: comicIndex)
+            destination.setComicDetails(comic: viewModel.comic(atIndex: comicIndex), copyright: viewModel.copyrightLabel())
         }
     }
 }
@@ -67,5 +67,4 @@ extension LandingPageViewController: ViewModelDelegate {
     func showError(_ error: String) {
         print(error)
     }
-    
 }

@@ -20,37 +20,49 @@ class DetailsViewController: UIViewController {
     @IBOutlet private weak var comicReleaseDate: UILabel!
     @IBOutlet private weak var comicCopyright: UILabel!
     
+    private lazy var viewModel = DetailsViewModel(delegate: self)
+    
     @IBAction private func buyButtonPressed(_ sender: UIButton) {
-        print("Buy button pressed")
+        guard let buyLink = URL(string: "https://www.google.com") else { return }
+        UIApplication.shared.open(buyLink, options: [:], completionHandler: nil)
     }
     
     @IBAction private func addButtonPressed(_ sender: UIButton) {
         print("Add button pressed")
     }
     
-    var singleComic: Comic?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Details"
-        setComicDetails()
+        showComicDetails()
     }
     
-    func setComicDetails() {
+    func setComicDetails(comic: Comic?, copyright: String?) {
+        viewModel.setComicInfo(comic, copyright)
+    }
+    
+    private func showComicDetails() {
+        let comicData = viewModel.formatComicData()
         
-        if let thumbnailPath = singleComic?.thumbnail?.path {
-            let thumbnailExtension = singleComic?.thumbnail?.extension ?? "strings"
-            let comicThumbnailURL = thumbnailPath.buildImageURL(quality: "detail", imageExtension: thumbnailExtension).convertToHttps
-            comicThumbnail.loadImageFromURL(imageURL: comicThumbnailURL)
+        comicTitle.text = comicData.title
+        comicIssue.text = comicData.issue
+        comicPages.text = comicData.pages
+        comicVariant.text = comicData.variant
+        comicDescription.text = comicData.description
+        comicCopyright.text = comicData.copyright
+        comicPrice.setTitle(comicData.price, for: .normal)
+        if let thumbnailURL = comicData.thumbnailLink {
+            comicThumbnail.loadImageFromURL(imageURL: thumbnailURL)
         }
-        
-        comicTitle.text = singleComic?.title
-        //comicIssue.text = singleComic?.issueNumber
-        //comicPages.text = singleComic?.pageCount
-        comicVariant.text = singleComic?.variantDescription
-        comicPrice.setTitle("$5.00", for: .normal)
-        comicDescription.text = singleComic?.description
-        //comicReleaseDate.text = singleComic?.dates[0].date
-        comicCopyright.text = "Copyright Marvel"
-        }
+    }
+}
+
+extension DetailsViewController: DetailsViewModelDelegate {
+    func showError(_ error: String) {
+        print(error)
+    }
+    
+    func likeComic() {
+        print("Comic Liked")
+    }
 }
