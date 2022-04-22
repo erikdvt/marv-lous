@@ -17,7 +17,7 @@ class DetailsViewModel {
     private weak var delegate: DetailsViewModelDelegate?
     private var singleComic: Comic?
     private var copyrightDisclaimer: String?
-    
+        
     init(delegate: DetailsViewModelDelegate?) {
         self.delegate = delegate
     }
@@ -28,12 +28,19 @@ class DetailsViewModel {
     }
     
     func formatComicData() -> FormattedComic {
-        
-    var formattedComic = FormattedComic()
+        var formattedComic = FormattedComic()
         
         if let thumbnailPath = singleComic?.thumbnail?.path {
             let thumbnailExtension = singleComic?.thumbnail?.extension ?? "strings"
             formattedComic.thumbnailLink = thumbnailPath.buildImageURL(quality: "detail", imageExtension: thumbnailExtension).convertToHttps
+        }
+        
+        if let date: String = singleComic?.dates?[0].date {
+            let zeroIndex = date.startIndex
+            let nineIndex = date.index(zeroIndex, offsetBy: 9)
+            formattedComic.releaseDate = "Released: " + date[zeroIndex...nineIndex]
+        } else {
+            formattedComic.releaseDate = ""
         }
         
         formattedComic.title = singleComic?.title
@@ -43,8 +50,14 @@ class DetailsViewModel {
         formattedComic.copyright = copyrightDisclaimer
         formattedComic.issue = String(format: "Issue %.0f", (singleComic?.issueNumber ?? 0.0))
         formattedComic.pages = "\(singleComic?.pageCount ?? 0) pages"
-        formattedComic.releaseDate = singleComic?.dates?[0].date
         
         return formattedComic
+    }
+    
+    func purchaseLink() -> String {
+        guard let link = singleComic?.urls?[0].url else {
+            return "http://www.marvel.com"
+        }
+        return link
     }
 }

@@ -23,7 +23,7 @@ class DetailsViewController: UIViewController {
     private lazy var viewModel = DetailsViewModel(delegate: self)
     
     @IBAction private func buyButtonPressed(_ sender: UIButton) {
-        guard let buyLink = URL(string: "https://www.google.com") else { return }
+        guard let buyLink = URL(string: viewModel.purchaseLink()) else { return }
         UIApplication.shared.open(buyLink, options: [:], completionHandler: nil)
     }
     
@@ -34,6 +34,7 @@ class DetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Details"
+        
         showComicDetails()
     }
     
@@ -51,6 +52,7 @@ class DetailsViewController: UIViewController {
         comicDescription.text = comicData.description
         comicCopyright.text = comicData.copyright
         comicPrice.setTitle(comicData.price, for: .normal)
+        comicReleaseDate.text = comicData.releaseDate
         if let thumbnailURL = comicData.thumbnailLink {
             comicThumbnail.loadImageFromURL(imageURL: thumbnailURL)
         }
