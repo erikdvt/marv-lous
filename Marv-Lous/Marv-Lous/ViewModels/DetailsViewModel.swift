@@ -33,6 +33,8 @@ class DetailsViewModel {
         if let thumbnailPath = singleComic?.thumbnail?.path {
             let thumbnailExtension = singleComic?.thumbnail?.extension ?? "strings"
             formattedComic.thumbnailLink = thumbnailPath.buildImageURL(quality: "detail", imageExtension: thumbnailExtension).convertToHttps
+        } else {
+            delegate?.showError("No thumbnail found.")
         }
         
         if let date: String = singleComic?.dates?[0].date {

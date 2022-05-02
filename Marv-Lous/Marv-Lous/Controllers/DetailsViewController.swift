@@ -61,7 +61,9 @@ class DetailsViewController: UIViewController {
 
 extension DetailsViewController: DetailsViewModelDelegate {
     func showError(_ error: String) {
-        print(error)
+        self.showAlert(title: "Login unsuccesful",
+                       message: error,
+                       button: "Retry")
     }
     
     func likeComic() {
