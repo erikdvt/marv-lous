@@ -32,6 +32,10 @@ class LandingPageViewModel {
         return comicList?.data.results[atIndex] ?? nil
     }
     
+    func copyrightLabel() -> String? {
+        return comicList?.copyright ?? ""
+    }
+    
     func fetchComicList() {
         repository.fetchSearchResults(completion: { [weak self] result in
             DispatchQueue.main.async {
