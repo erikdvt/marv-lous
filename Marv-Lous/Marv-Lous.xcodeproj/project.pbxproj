@@ -130,14 +130,12 @@
 		AB2ECEAB27E26F6F001BB551 /* Marv-Lous */ = {
 			isa = PBXGroup;
 			children = (
-				AB46FB7827F47477000AEF91 /* Service Layer */,
-				AB52FEEC27F357EF008B2326 /* Repositories */,
-				AB52FEE727F3528F008B2326 /* Extensions */,
 				AB2ECEDF27E2714D001BB551 /* Utilities */,
-				AB2ECEE427E2717C001BB551 /* Resources */,
+				AB4DAB612825790A00F4D3CE /* Features */,
 				AB2ECEE627E271DC001BB551 /* UserInterfaces */,
-				AB52FEEA27F35620008B2326 /* ViewModels */,
-				AB2ECEE727E2734A001BB551 /* Controllers */,
+				AB46FB7827F47477000AEF91 /* Service Layer */,
+				AB52FEE727F3528F008B2326 /* Extensions */,
+				AB2ECEE427E2717C001BB551 /* Style Kit */,
 				AB2ECEE527E271AC001BB551 /* Config */,
 			);
 			path = "Marv-Lous";
@@ -178,12 +176,12 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		AB2ECEE427E2717C001BB551 /* Resources */ = {
+		AB2ECEE427E2717C001BB551 /* Style Kit */ = {
 			isa = PBXGroup;
 			children = (
 				AB2ECEB527E26F70001BB551 /* Assets.xcassets */,
 			);
-			path = Resources;
+			path = "Style Kit";
 			sourceTree = "<group>";
 		};
 		AB2ECEE527E271AC001BB551 /* Config */ = {
@@ -200,21 +198,10 @@
 		AB2ECEE627E271DC001BB551 /* UserInterfaces */ = {
 			isa = PBXGroup;
 			children = (
-				AB52FEED27F35909008B2326 /* TableViewCells */,
 				AB2ECEB227E26F6F001BB551 /* Main.storyboard */,
 				AB2ECEB727E26F71001BB551 /* LaunchScreen.storyboard */,
 			);
 			path = UserInterfaces;
-			sourceTree = "<group>";
-		};
-		AB2ECEE727E2734A001BB551 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				AB3A792A27F715840086FA56 /* LoginPageViewController.swift */,
-				AB2ECEB027E26F6F001BB551 /* LandingPageViewController.swift */,
-				ABDE6D832805B4F60066C399 /* DetailsViewController.swift */,
-			);
-			path = Controllers;
 			sourceTree = "<group>";
 		};
 		AB46FB7827F47477000AEF91 /* Service Layer */ = {
@@ -225,6 +212,69 @@
 			path = "Service Layer";
 			sourceTree = "<group>";
 		};
+		AB4DAB612825790A00F4D3CE /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				AB4DAB642825793200F4D3CE /* Details */,
+				AB4DAB632825792700F4D3CE /* Landing */,
+				AB4DAB622825791F00F4D3CE /* Login */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		AB4DAB622825791F00F4D3CE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AB4DAB6728263CEB00F4D3CE /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		AB4DAB632825792700F4D3CE /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				AB4DAB6528263BAD00F4D3CE /* View */,
+				AB52FEEC27F357EF008B2326 /* Repositories */,
+			);
+			path = Landing;
+			sourceTree = "<group>";
+		};
+		AB4DAB642825793200F4D3CE /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				AB4DAB6628263CDD00F4D3CE /* View */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		AB4DAB6528263BAD00F4D3CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB52FEED27F35909008B2326 /* TableViewCells */,
+				AB52FEEE27F35F0D008B2326 /* LandingPageViewModel.swift */,
+				AB2ECEB027E26F6F001BB551 /* LandingPageViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB4DAB6628263CDD00F4D3CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB31D6282811441900945967 /* DetailsViewModel.swift */,
+				ABDE6D832805B4F60066C399 /* DetailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB4DAB6728263CEB00F4D3CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB3A792827F7155B0086FA56 /* LoginPageViewModel.swift */,
+				AB3A792A27F715840086FA56 /* LoginPageViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		AB52FEE727F3528F008B2326 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,16 +283,6 @@
 				AB8EAD7727EC580B005111A2 /* StringExtension.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		AB52FEEA27F35620008B2326 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				AB3A792827F7155B0086FA56 /* LoginPageViewModel.swift */,
-				AB52FEEE27F35F0D008B2326 /* LandingPageViewModel.swift */,
-				AB31D6282811441900945967 /* DetailsViewModel.swift */,
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		AB52FEEC27F357EF008B2326 /* Repositories */ = {
