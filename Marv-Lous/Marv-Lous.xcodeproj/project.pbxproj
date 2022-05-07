@@ -198,6 +198,7 @@
 		AB2ECEE627E271DC001BB551 /* UserInterfaces */ = {
 			isa = PBXGroup;
 			children = (
+				AB52FEED27F35909008B2326 /* TableViewCells */,
 				AB2ECEB227E26F6F001BB551 /* Main.storyboard */,
 				AB2ECEB727E26F71001BB551 /* LaunchScreen.storyboard */,
 			);
@@ -250,7 +251,6 @@
 		AB4DAB6528263BAD00F4D3CE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AB52FEED27F35909008B2326 /* TableViewCells */,
 				AB52FEEE27F35F0D008B2326 /* LandingPageViewModel.swift */,
 				AB2ECEB027E26F6F001BB551 /* LandingPageViewController.swift */,
 			);
