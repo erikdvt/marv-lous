@@ -1,5 +1,5 @@
 //
-//  LoginPageViewModel.swift
+//  LoginViewModel.swift
 //  Marv-Lous
 //
 //  Created by Erik Egers on 2022/04/01.
@@ -7,17 +7,17 @@
 
 import Foundation
 
-protocol LoginPageViewModelDelegate: AnyObject {
+protocol LoginViewModelDelegate: AnyObject {
     func showError(_ error: String)
     func navigateToLandingPage()
 }
 
-class LoginPageViewModel {
-    private weak var delegate: LoginPageViewModelDelegate?
+class LoginViewModel {
+    private weak var delegate: LoginViewModelDelegate?
     private var username = ""
     private var password = ""
     
-    init(delegate: LoginPageViewModelDelegate?) {
+    init(delegate: LoginViewModelDelegate?) {
         self.delegate = delegate
     }
     
