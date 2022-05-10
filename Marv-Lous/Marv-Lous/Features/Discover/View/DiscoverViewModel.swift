@@ -1,5 +1,5 @@
 //
-//  LandingPageViewModel.swift
+//  DiscoverViewModel.swift
 //  Marv-Lous
 //
 //  Created by Erik Egers on 2022/03/29.
@@ -7,18 +7,18 @@
 
 import Foundation
 
-protocol ViewModelDelegate: AnyObject {
+protocol DiscoverViewModelDelegate: AnyObject {
     func reloadView()
     func showError(_ error: String)
 }
 
-class LandingPageViewModel {
+class DiscoverViewModel {
     
     private var comicList: ComicsModel?
-    private weak var delegate: ViewModelDelegate?
+    private weak var delegate: DiscoverViewModelDelegate?
     private var repository: SearchComicRepositoryType
 
-    init(delegate: ViewModelDelegate?,
+    init(delegate: DiscoverViewModelDelegate?,
          repository: SearchComicRepositoryType) {
         self.delegate = delegate
         self.repository = repository

@@ -1,5 +1,5 @@
 //
-//  LoginPageViewController.swift
+//  LoginViewController.swift
 //  Marv-Lous
 //
 //  Created by Erik Egers on 2022/04/01.
@@ -8,12 +8,12 @@
 import Foundation
 import UIKit
 
-class LoginPageViewController: UIViewController {
+class LoginViewController: UIViewController {
     
     @IBOutlet private weak var usernameTextField: UITextField!
     @IBOutlet private weak var passwordTextField: UITextField!
     
-    private lazy var loginPageViewModel = LoginPageViewModel(delegate: self)
+    private lazy var loginPageViewModel = LoginViewModel(delegate: self)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +34,7 @@ class LoginPageViewController: UIViewController {
 }
 
 // MARK: - Text Field Delegate Methods
-extension LoginPageViewController: UITextFieldDelegate {
+extension LoginViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         usernameTextField.resignFirstResponder()
         passwordTextField.resignFirstResponder()
@@ -46,7 +46,7 @@ extension LoginPageViewController: UITextFieldDelegate {
     }
 }
 
-extension LoginPageViewController: LoginPageViewModelDelegate {
+extension LoginViewController: LoginViewModelDelegate {
     func showError(_ error: String) {
         usernameTextField.text = ""
         passwordTextField.text = ""
