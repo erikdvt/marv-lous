@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DiscoverViewController.swift
 //  Marv-Lous
 //
 //  Created by Erik Egers on 2022/03/16.
@@ -8,11 +8,11 @@
 import Foundation
 import UIKit
 
-class LandingPageViewController: UIViewController {
+class DiscoverViewController: UIViewController {
 
     @IBOutlet weak var comicsTableView: UITableView!
     
-    private lazy var viewModel = LandingPageViewModel(delegate: self,
+    private lazy var viewModel = DiscoverViewModel(delegate: self,
                                                       repository: SearchComicRepository())
     
     override func viewDidLoad() {
@@ -30,7 +30,7 @@ class LandingPageViewController: UIViewController {
 
 // MARK: - TableView Delagate
 
-extension LandingPageViewController: UITableViewDelegate, UITableViewDataSource {
+extension DiscoverViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.comicCount
     }
@@ -59,7 +59,7 @@ extension LandingPageViewController: UITableViewDelegate, UITableViewDataSource 
 
 // MARK: - ViewModel Delagate
 
-extension LandingPageViewController: ViewModelDelegate {
+extension DiscoverViewController: DiscoverViewModelDelegate {
     func reloadView() {
         comicsTableView.reloadData()
     }
