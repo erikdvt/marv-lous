@@ -29,6 +29,10 @@
 		AB8EAD7627EC3BAD005111A2 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8EAD7527EC3BAD005111A2 /* APIError.swift */; };
 		AB8EAD7827EC580B005111A2 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8EAD7727EC580B005111A2 /* StringExtension.swift */; };
 		ABA3BEAD27FD78EE001C09A6 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA3BEAC27FD78EE001C09A6 /* UIViewControllerExtension.swift */; };
+		ABA91D772827E69E002412EA /* FavouritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA91D762827E69E002412EA /* FavouritesViewModel.swift */; };
+		ABA91D7B2827E6E6002412EA /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA91D7A2827E6E6002412EA /* FavouritesViewController.swift */; };
+		ABA91D7E2827E87D002412EA /* FavouritesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA91D7D2827E87D002412EA /* FavouritesRepository.swift */; };
+		ABA91DC02827ECFD002412EA /* Comics.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ABA91DBE2827ECFD002412EA /* Comics.xcdatamodeld */; };
 		ABC8DE4627EDC69C007E60A2 /* ComicTabelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC8DE4527EDC69C007E60A2 /* ComicTabelViewCell.swift */; };
 		ABDE6D842805B4F60066C399 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDE6D832805B4F60066C399 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -78,6 +82,10 @@
 		AB8EAD7527EC3BAD005111A2 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		AB8EAD7727EC580B005111A2 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		ABA3BEAC27FD78EE001C09A6 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		ABA91D762827E69E002412EA /* FavouritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewModel.swift; sourceTree = "<group>"; };
+		ABA91D7A2827E6E6002412EA /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
+		ABA91D7D2827E87D002412EA /* FavouritesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesRepository.swift; sourceTree = "<group>"; };
+		ABA91DBF2827ECFD002412EA /* Comics.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Comics.xcdatamodel; sourceTree = "<group>"; };
 		ABC8DE4527EDC69C007E60A2 /* ComicTabelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ComicTabelViewCell.swift; path = "Marv-Lous/UserInterfaces/TableViewCells/ComicTabelViewCell.swift"; sourceTree = SOURCE_ROOT; };
 		ABDE6D832805B4F60066C399 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,6 +138,7 @@
 		AB2ECEAB27E26F6F001BB551 /* Marv-Lous */ = {
 			isa = PBXGroup;
 			children = (
+				ABA91D732827E660002412EA /* Features */,
 				AB46FB7827F47477000AEF91 /* Service Layer */,
 				AB52FEEC27F357EF008B2326 /* Repositories */,
 				AB52FEE727F3528F008B2326 /* Extensions */,
@@ -139,6 +148,7 @@
 				AB52FEEA27F35620008B2326 /* ViewModels */,
 				AB2ECEE727E2734A001BB551 /* Controllers */,
 				AB2ECEE527E271AC001BB551 /* Config */,
+				ABA91DBE2827ECFD002412EA /* Comics.xcdatamodeld */,
 			);
 			path = "Marv-Lous";
 			sourceTree = "<group>";
@@ -260,6 +270,40 @@
 				ABC8DE4527EDC69C007E60A2 /* ComicTabelViewCell.swift */,
 			);
 			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		ABA91D732827E660002412EA /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				ABA91D742827E667002412EA /* Favourites */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		ABA91D742827E667002412EA /* Favourites */ = {
+			isa = PBXGroup;
+			children = (
+				ABA91D7C2827E868002412EA /* Repository */,
+				ABA91D752827E674002412EA /* View */,
+			);
+			path = Favourites;
+			sourceTree = "<group>";
+		};
+		ABA91D752827E674002412EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ABA91D762827E69E002412EA /* FavouritesViewModel.swift */,
+				ABA91D7A2827E6E6002412EA /* FavouritesViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ABA91D7C2827E868002412EA /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				ABA91D7D2827E87D002412EA /* FavouritesRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,14 +463,18 @@
 				AB2ECEB127E26F6F001BB551 /* LandingPageViewController.swift in Sources */,
 				ABA3BEAD27FD78EE001C09A6 /* UIViewControllerExtension.swift in Sources */,
 				AB2ECEE127E27165001BB551 /* SearchComicRepository.swift in Sources */,
+				ABA91DC02827ECFD002412EA /* Comics.xcdatamodeld in Sources */,
 				ABC8DE4627EDC69C007E60A2 /* ComicTabelViewCell.swift in Sources */,
 				AB46FB7A27F4748F000AEF91 /* ServiceErrors.swift in Sources */,
 				AB3A792B27F715840086FA56 /* LoginPageViewController.swift in Sources */,
+				ABA91D7B2827E6E6002412EA /* FavouritesViewController.swift in Sources */,
 				AB2ECEAD27E26F6F001BB551 /* AppDelegate.swift in Sources */,
 				AB2B863327E47F9500B99ED6 /* ComicsModel.swift in Sources */,
 				AB2ECEAF27E26F6F001BB551 /* SceneDelegate.swift in Sources */,
+				ABA91D7E2827E87D002412EA /* FavouritesRepository.swift in Sources */,
 				AB2ECEE327E27172001BB551 /* Constants.swift in Sources */,
 				ABDE6D842805B4F60066C399 /* DetailsViewController.swift in Sources */,
+				ABA91D772827E69E002412EA /* FavouritesViewModel.swift in Sources */,
 				AB8EAD7627EC3BAD005111A2 /* APIError.swift in Sources */,
 				AB8EAD7827EC580B005111A2 /* StringExtension.swift in Sources */,
 				AB52FEEF27F35F0D008B2326 /* LandingPageViewModel.swift in Sources */,
@@ -777,6 +825,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ABA91DBE2827ECFD002412EA /* Comics.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ABA91DBF2827ECFD002412EA /* Comics.xcdatamodel */,
+			);
+			currentVersion = ABA91DBF2827ECFD002412EA /* Comics.xcdatamodel */;
+			path = Comics.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AB2ECEA127E26F6F001BB551 /* Project object */;
 }

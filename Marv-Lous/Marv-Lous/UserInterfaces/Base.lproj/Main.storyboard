@@ -368,7 +368,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="MIA-2D-i8T" kind="relationship" relationship="viewControllers" id="ZOE-cf-O7I"/>
-                        <segue destination="thQ-Fg-3ru" kind="relationship" relationship="viewControllers" id="IY6-p6-OPY"/>
+                        <segue destination="p9P-FX-Xrs" kind="relationship" relationship="viewControllers" id="IY6-p6-OPY"/>
                         <segue destination="hef-ci-87F" kind="relationship" relationship="viewControllers" id="X0l-is-gbm"/>
                     </connections>
                 </tabBarController>
@@ -418,14 +418,45 @@
                     <view key="view" contentMode="scaleToFill" id="at2-qA-YMe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="OVd-bD-FoM">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Zti-dW-NtE"/>
                         <color key="backgroundColor" systemColor="tintColor"/>
+                        <constraints>
+                            <constraint firstItem="OVd-bD-FoM" firstAttribute="trailing" secondItem="Zti-dW-NtE" secondAttribute="trailing" id="Fpl-Io-33g"/>
+                            <constraint firstItem="OVd-bD-FoM" firstAttribute="leading" secondItem="Zti-dW-NtE" secondAttribute="leading" id="Jdg-Zd-k6c"/>
+                            <constraint firstAttribute="bottom" secondItem="OVd-bD-FoM" secondAttribute="bottom" id="nFJ-5m-8bc"/>
+                            <constraint firstItem="OVd-bD-FoM" firstAttribute="top" secondItem="at2-qA-YMe" secondAttribute="top" id="oMh-MR-Vj8"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Favourites" id="l4j-I9-elL"/>
+                    <navigationItem key="navigationItem" id="YlR-dU-V6d"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7EK-ly-SHC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1667" y="763"/>
+            <point key="canvasLocation" x="2576.811594202899" y="762.72321428571422"/>
+        </scene>
+        <!--Favourites-->
+        <scene sceneID="aBS-4e-gG1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="p9P-FX-Xrs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favourites" id="l4j-I9-elL"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Zf-Ld-GnE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="thQ-Fg-3ru" kind="relationship" relationship="rootViewController" id="Ieo-2V-o81"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EBD-Qr-O9Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1666.6666666666667" y="762.72321428571422"/>
         </scene>
     </scenes>
     <color key="tintColor" name="Primary"/>
