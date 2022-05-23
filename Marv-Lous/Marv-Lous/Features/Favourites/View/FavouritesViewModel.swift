@@ -13,9 +13,25 @@ protocol FavouritesViewModelDelegate: AnyObject {
 }
 
 class FavouritesViewModel {
-    private var comicList: ComicsModel?
+    private var favComics: [Comic] = []
     private weak var delegate: FavouritesViewModelDelegate?
     private var repository: FavouritesRepositoryType
     
+    init(delegate: FavouritesViewModelDelegate?, repository: FavouritesRepositoryType) {
+        self.delegate = delegate
+        self.repository = repository
+    }
     
+    public func displayFavComics() {
+        
+    }
+    
+    public var comicCount: Int {
+        return favComics.count
+    }
+    
+    public func saveComic(newComic: Comic?) {
+        guard let safeComic = newComic else { return }
+        
+    }
 }

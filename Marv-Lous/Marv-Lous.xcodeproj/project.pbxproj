@@ -32,11 +32,10 @@
 		AB8EAD7627EC3BAD005111A2 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8EAD7527EC3BAD005111A2 /* APIError.swift */; };
 		AB8EAD7827EC580B005111A2 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8EAD7727EC580B005111A2 /* StringExtension.swift */; };
 		ABA3BEAD27FD78EE001C09A6 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA3BEAC27FD78EE001C09A6 /* UIViewControllerExtension.swift */; };
-		ABA91D772827E69E002412EA /* FavouritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA91D762827E69E002412EA /* FavouritesViewModel.swift */; };
-		ABA91D7B2827E6E6002412EA /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA91D7A2827E6E6002412EA /* FavouritesViewController.swift */; };
-		ABA91D7E2827E87D002412EA /* FavouritesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA91D7D2827E87D002412EA /* FavouritesRepository.swift */; };
 		ABA91DC02827ECFD002412EA /* Comics.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ABA91DBE2827ECFD002412EA /* Comics.xcdatamodeld */; };
 		ABC8DE4627EDC69C007E60A2 /* ComicTabelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC8DE4527EDC69C007E60A2 /* ComicTabelViewCell.swift */; };
+		ABC94616283AAE5100443BEF /* SingleComicDetailsData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC94614283AAE5100443BEF /* SingleComicDetailsData+CoreDataClass.swift */; };
+		ABC94617283AAE5100443BEF /* SingleComicDetailsData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC94615283AAE5100443BEF /* SingleComicDetailsData+CoreDataProperties.swift */; };
 		ABDE6D842805B4F60066C399 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDE6D832805B4F60066C399 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,8 +61,7 @@
 		AB0929BB282AB96F00563F20 /* FavouritesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesViewModel.swift; sourceTree = "<group>"; };
 		AB0929BC282AB96F00563F20 /* FavouritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
 		AB2B863227E47F9500B99ED6 /* ComicsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsModel.swift; sourceTree = "<group>"; };
-		AB2B863427E784DB00B99ED6 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
-		AB2ECEA927E26F6F001BB551 /* Marv-Lous.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Marv-Lous.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB2ECEA927E26F6F001BB551 /* Marv-Lous.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Marv-Lous.app"; path = "/Users/eegers/Documents/DVT Grad Programme/marv-lous/Marv-Lous/build/Debug-iphoneos/Marv-Lous.app"; sourceTree = "<absolute>"; };
 		AB2ECEAC27E26F6F001BB551 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB2ECEAE27E26F6F001BB551 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AB2ECEB027E26F6F001BB551 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
@@ -71,9 +69,9 @@
 		AB2ECEB527E26F70001BB551 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB2ECEB827E26F71001BB551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB2ECEBA27E26F71001BB551 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB2ECEBF27E26F71001BB551 /* Marv-LousTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Marv-LousTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB2ECEBF27E26F71001BB551 /* Marv-LousTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Marv-LousTests.xctest"; path = "/Users/eegers/Documents/DVT Grad Programme/marv-lous/Marv-Lous/build/Debug-iphoneos/Marv-LousTests.xctest"; sourceTree = "<absolute>"; };
 		AB2ECEC327E26F71001BB551 /* Marv_LousTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marv_LousTests.swift; sourceTree = "<group>"; };
-		AB2ECEC927E26F71001BB551 /* Marv-LousUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Marv-LousUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB2ECEC927E26F71001BB551 /* Marv-LousUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Marv-LousUITests.xctest"; path = "/Users/eegers/Documents/DVT Grad Programme/marv-lous/Marv-Lous/build/Debug-iphoneos/Marv-LousUITests.xctest"; sourceTree = "<absolute>"; };
 		AB2ECECD27E26F71001BB551 /* Marv_LousUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marv_LousUITests.swift; sourceTree = "<group>"; };
 		AB2ECECF27E26F71001BB551 /* Marv_LousUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marv_LousUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AB2ECEE027E27165001BB551 /* SearchComicRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchComicRepository.swift; sourceTree = "<group>"; };
@@ -88,11 +86,10 @@
 		AB8EAD7527EC3BAD005111A2 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		AB8EAD7727EC580B005111A2 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		ABA3BEAC27FD78EE001C09A6 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
-		ABA91D762827E69E002412EA /* FavouritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewModel.swift; sourceTree = "<group>"; };
-		ABA91D7A2827E6E6002412EA /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
-		ABA91D7D2827E87D002412EA /* FavouritesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesRepository.swift; sourceTree = "<group>"; };
 		ABA91DBF2827ECFD002412EA /* Comics.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Comics.xcdatamodel; sourceTree = "<group>"; };
 		ABC8DE4527EDC69C007E60A2 /* ComicTabelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ComicTabelViewCell.swift; path = "Marv-Lous/UserInterfaces/TableViewCells/ComicTabelViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		ABC94614283AAE5100443BEF /* SingleComicDetailsData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SingleComicDetailsData+CoreDataClass.swift"; path = "Marv-Lous/SingleComicDetailsData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		ABC94615283AAE5100443BEF /* SingleComicDetailsData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SingleComicDetailsData+CoreDataProperties.swift"; path = "Marv-Lous/SingleComicDetailsData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		ABDE6D832805B4F60066C399 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +130,7 @@
 		AB0929B8282AB96F00563F20 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				ABC94607283AA68900443BEF /* Models */,
 				AB0929B9282AB96F00563F20 /* FavouritesRepository.swift */,
 			);
 			path = Repository;
@@ -150,22 +148,12 @@
 		AB2ECEA027E26F6F001BB551 = {
 			isa = PBXGroup;
 			children = (
+				ABC94614283AAE5100443BEF /* SingleComicDetailsData+CoreDataClass.swift */,
+				ABC94615283AAE5100443BEF /* SingleComicDetailsData+CoreDataProperties.swift */,
 				AB2ECEAB27E26F6F001BB551 /* Marv-Lous */,
 				AB2ECEC227E26F71001BB551 /* Marv-LousTests */,
 				AB2ECECC27E26F71001BB551 /* Marv-LousUITests */,
-				AB2ECEAA27E26F6F001BB551 /* Products */,
-				ABA91DDF282AB7B7002412EA /* Recovered References */,
 			);
-			sourceTree = "<group>";
-		};
-		AB2ECEAA27E26F6F001BB551 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AB2ECEA927E26F6F001BB551 /* Marv-Lous.app */,
-				AB2ECEBF27E26F71001BB551 /* Marv-LousTests.xctest */,
-				AB2ECEC927E26F71001BB551 /* Marv-LousUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		AB2ECEAB27E26F6F001BB551 /* Marv-Lous */ = {
@@ -229,7 +217,6 @@
 		AB2ECEE527E271AC001BB551 /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				AB2B863427E784DB00B99ED6 /* Config.xcconfig */,
 				AB2ECEBA27E26F71001BB551 /* Info.plist */,
 				AB2ECEAC27E26F6F001BB551 /* AppDelegate.swift */,
 				AB2ECEAE27E26F6F001BB551 /* SceneDelegate.swift */,
@@ -345,14 +332,11 @@
 			path = TableViewCells;
 			sourceTree = "<group>";
 		};
-		ABA91DDF282AB7B7002412EA /* Recovered References */ = {
+		ABC94607283AA68900443BEF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				ABA91D7A2827E6E6002412EA /* FavouritesViewController.swift */,
-				ABA91D7D2827E87D002412EA /* FavouritesRepository.swift */,
-				ABA91D762827E69E002412EA /* FavouritesViewModel.swift */,
 			);
-			name = "Recovered References";
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -444,7 +428,7 @@
 				Base,
 			);
 			mainGroup = AB2ECEA027E26F6F001BB551;
-			productRefGroup = AB2ECEAA27E26F6F001BB551 /* Products */;
+			productRefGroup = AB2ECEA027E26F6F001BB551;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -507,7 +491,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABC94616283AAE5100443BEF /* SingleComicDetailsData+CoreDataClass.swift in Sources */,
 				AB31D62B281166C300945967 /* FormattedComic.swift in Sources */,
+				ABC94617283AAE5100443BEF /* SingleComicDetailsData+CoreDataProperties.swift in Sources */,
 				AB52FEE927F352D6008B2326 /* UIImageViewExtension.swift in Sources */,
 				AB2ECEB127E26F6F001BB551 /* DiscoverViewController.swift in Sources */,
 				ABA3BEAD27FD78EE001C09A6 /* UIViewControllerExtension.swift in Sources */,
@@ -517,14 +503,11 @@
 				AB46FB7A27F4748F000AEF91 /* ServiceErrors.swift in Sources */,
 				AB0929BE282AB96F00563F20 /* FavouritesViewModel.swift in Sources */,
 				AB3A792B27F715840086FA56 /* LoginViewController.swift in Sources */,
-				ABA91D7B2827E6E6002412EA /* FavouritesViewController.swift in Sources */,
 				AB2ECEAD27E26F6F001BB551 /* AppDelegate.swift in Sources */,
 				AB2B863327E47F9500B99ED6 /* ComicsModel.swift in Sources */,
 				AB2ECEAF27E26F6F001BB551 /* SceneDelegate.swift in Sources */,
-				ABA91D7E2827E87D002412EA /* FavouritesRepository.swift in Sources */,
 				AB2ECEE327E27172001BB551 /* Constants.swift in Sources */,
 				ABDE6D842805B4F60066C399 /* DetailsViewController.swift in Sources */,
-				ABA91D772827E69E002412EA /* FavouritesViewModel.swift in Sources */,
 				AB8EAD7627EC3BAD005111A2 /* APIError.swift in Sources */,
 				AB8EAD7827EC580B005111A2 /* StringExtension.swift in Sources */,
 				AB52FEEF27F35F0D008B2326 /* DiscoverViewModel.swift in Sources */,
