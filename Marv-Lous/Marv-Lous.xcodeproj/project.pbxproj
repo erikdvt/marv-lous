@@ -14,7 +14,6 @@
 		AB2ECEB427E26F6F001BB551 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2ECEB227E26F6F001BB551 /* Main.storyboard */; };
 		AB2ECEB627E26F70001BB551 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB2ECEB527E26F70001BB551 /* Assets.xcassets */; };
 		AB2ECEB927E26F71001BB551 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2ECEB727E26F71001BB551 /* LaunchScreen.storyboard */; };
-		AB2ECEC427E26F71001BB551 /* Marv_LousTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2ECEC327E26F71001BB551 /* Marv_LousTests.swift */; };
 		AB2ECECE27E26F71001BB551 /* Marv_LousUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2ECECD27E26F71001BB551 /* Marv_LousUITests.swift */; };
 		AB2ECED027E26F71001BB551 /* Marv_LousUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2ECECF27E26F71001BB551 /* Marv_LousUITestsLaunchTests.swift */; };
 		AB2ECEE127E27165001BB551 /* SearchComicRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2ECEE027E27165001BB551 /* SearchComicRepository.swift */; };
@@ -29,6 +28,9 @@
 		AB8EAD7627EC3BAD005111A2 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8EAD7527EC3BAD005111A2 /* APIError.swift */; };
 		AB8EAD7827EC580B005111A2 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8EAD7727EC580B005111A2 /* StringExtension.swift */; };
 		ABA3BEAD27FD78EE001C09A6 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA3BEAC27FD78EE001C09A6 /* UIViewControllerExtension.swift */; };
+		ABAAC2A3284768AF00A906EB /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAAC2A2284768AF00A906EB /* LoginTests.swift */; };
+		ABAAC2A5284768BC00A906EB /* DiscoverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAAC2A4284768BC00A906EB /* DiscoverTests.swift */; };
+		ABAAC2A7284768C800A906EB /* DetailsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAAC2A6284768C800A906EB /* DetailsTests.swift */; };
 		ABC8DE4627EDC69C007E60A2 /* ComicTabelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC8DE4527EDC69C007E60A2 /* ComicTabelViewCell.swift */; };
 		ABDE6D842805B4F60066C399 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDE6D832805B4F60066C399 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -62,7 +64,6 @@
 		AB2ECEB827E26F71001BB551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB2ECEBA27E26F71001BB551 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB2ECEBF27E26F71001BB551 /* Marv-LousTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Marv-LousTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB2ECEC327E26F71001BB551 /* Marv_LousTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marv_LousTests.swift; sourceTree = "<group>"; };
 		AB2ECEC927E26F71001BB551 /* Marv-LousUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Marv-LousUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB2ECECD27E26F71001BB551 /* Marv_LousUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marv_LousUITests.swift; sourceTree = "<group>"; };
 		AB2ECECF27E26F71001BB551 /* Marv_LousUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marv_LousUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -78,6 +79,9 @@
 		AB8EAD7527EC3BAD005111A2 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		AB8EAD7727EC580B005111A2 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		ABA3BEAC27FD78EE001C09A6 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		ABAAC2A2284768AF00A906EB /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
+		ABAAC2A4284768BC00A906EB /* DiscoverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTests.swift; sourceTree = "<group>"; };
+		ABAAC2A6284768C800A906EB /* DetailsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTests.swift; sourceTree = "<group>"; };
 		ABC8DE4527EDC69C007E60A2 /* ComicTabelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ComicTabelViewCell.swift; path = "Marv-Lous/UserInterfaces/TableViewCells/ComicTabelViewCell.swift"; sourceTree = SOURCE_ROOT; };
 		ABDE6D832805B4F60066C399 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,7 +148,9 @@
 		AB2ECEC227E26F71001BB551 /* Marv-LousTests */ = {
 			isa = PBXGroup;
 			children = (
-				AB2ECEC327E26F71001BB551 /* Marv_LousTests.swift */,
+				ABAAC2A2284768AF00A906EB /* LoginTests.swift */,
+				ABAAC2A4284768BC00A906EB /* DiscoverTests.swift */,
+				ABAAC2A6284768C800A906EB /* DetailsTests.swift */,
 			);
 			path = "Marv-LousTests";
 			sourceTree = "<group>";
@@ -479,7 +485,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB2ECEC427E26F71001BB551 /* Marv_LousTests.swift in Sources */,
+				ABAAC2A3284768AF00A906EB /* LoginTests.swift in Sources */,
+				ABAAC2A7284768C800A906EB /* DetailsTests.swift in Sources */,
+				ABAAC2A5284768BC00A906EB /* DiscoverTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
