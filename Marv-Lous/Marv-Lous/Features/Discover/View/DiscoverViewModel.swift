@@ -38,16 +38,13 @@ class DiscoverViewModel {
     
     func fetchComicList() {
         repository.fetchSearchResults(completion: { [weak self] result in
-            DispatchQueue.main.async {
-                switch result {
-                case .success(let comicList):
-                    self?.comicList = comicList
-                    self?.delegate?.reloadView()
-                case .failure(let error):
-                    self?.delegate?.showError(error.rawValue)
-                }
+            switch result {
+            case .success(let comicList):
+                self?.comicList = comicList
+                self?.delegate?.reloadView()
+            case .failure(let error):
+                self?.delegate?.showError(error.rawValue)
             }
         })
     }
-
 }
