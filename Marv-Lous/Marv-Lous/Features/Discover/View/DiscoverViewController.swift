@@ -13,18 +13,17 @@ class DiscoverViewController: UIViewController {
     @IBOutlet weak var comicsTableView: UITableView!
     
     private lazy var viewModel = DiscoverViewModel(delegate: self,
-                                                      repository: SearchComicRepository())
+                                                   repository: SearchComicRepository())
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Discover"
         setupTableView()
         viewModel.fetchComicList()
     }
     
     func setupTableView() {
-        self.comicsTableView.delegate = self
-        self.comicsTableView.dataSource = self
+        comicsTableView.delegate = self
+        comicsTableView.dataSource = self
     }
 }
 

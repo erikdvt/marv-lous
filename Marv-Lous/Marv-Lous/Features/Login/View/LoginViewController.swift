@@ -21,10 +21,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction private func loginButtonPressed(_ sender: UIButton) {
-        let username = usernameTextField.text ?? ""
-        let password = passwordTextField.text ?? ""
-        
-        loginPageViewModel.attemptLogin(username, password)
+        loginPageViewModel.attemptLogin(usernameTextField.text, passwordTextField.text)
     }
     
     func setupTextFields() {
@@ -33,7 +30,7 @@ class LoginViewController: UIViewController {
     }
 }
 
-// MARK: - Text Field Delegate Methods
+// MARK: - UITextFieldDelegate
 extension LoginViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         usernameTextField.resignFirstResponder()
@@ -42,10 +39,11 @@ extension LoginViewController: UITextFieldDelegate {
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
+        view.endEditing(true)
     }
 }
 
+// MARK: - LoginViewModelDelegate
 extension LoginViewController: LoginViewModelDelegate {
     func showError(_ error: String) {
         usernameTextField.text = ""
@@ -56,6 +54,6 @@ extension LoginViewController: LoginViewModelDelegate {
     }
     
     func navigateToLandingPage() {
-        self.performSegue(withIdentifier: "goToLandingPage", sender: self)
+        performSegue(withIdentifier: "goToLandingPage", sender: self)
     }
 }

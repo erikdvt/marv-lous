@@ -13,9 +13,9 @@ class ComicTableViewCell: UITableViewCell {
     @IBOutlet private var comicNameLabel: UILabel!
     
     func populateWith(comic: Comic) {
-        guard let thumbnailPath = comic.thumbnail?.path else { return }
-        guard let thumbnailExtension = comic.thumbnail?.extension else { return }
-        guard let comicName = comic.title else { return }
+        guard let thumbnailPath = comic.thumbnail?.path,
+              let thumbnailExtension = comic.thumbnail?.extension,
+              let comicName = comic.title else { return }
         
         let comicThumbnailURL = thumbnailPath.buildImageURL(quality: "detail", imageExtension: thumbnailExtension).convertToHttps
         

@@ -40,3 +40,10 @@ extension String {
         return comicThumbnailURL
     }
 }
+
+
+extension String? {
+    var hasValue: Bool {
+        return !(self == nil || self == "")
+    }
+}
