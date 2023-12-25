@@ -33,8 +33,6 @@ class DetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Details"
-        
         showComicDetails()
     }
     

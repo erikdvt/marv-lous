@@ -29,15 +29,15 @@ class DiscoverViewModel {
     }
     
     func comic(atIndex: Int) -> Comic? {
-        return comicList?.data.results[atIndex] ?? nil
+        return comicList?.data.results[atIndex]
     }
     
     func copyrightLabel() -> String? {
-        return comicList?.copyright ?? ""
+        return comicList?.copyright
     }
     
     func fetchComicList() {
-        repository.fetchSearchResults(completion: { [weak self] result in
+        repository.fetchSearchResults { [weak self] result in
             switch result {
             case .success(let comicList):
                 self?.comicList = comicList
@@ -45,6 +45,6 @@ class DiscoverViewModel {
             case .failure(let error):
                 self?.delegate?.showError(error.rawValue)
             }
-        })
+        }
     }
 }

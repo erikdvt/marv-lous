@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Details View Controller-->
+        <!--Details-->
         <scene sceneID="8mx-Cx-uBj">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="45S-dq-YaX" customClass="DetailsViewController" customModule="Marv_Lous" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Details" modalPresentationStyle="fullScreen" id="45S-dq-YaX" customClass="DetailsViewController" customModule="Marv_Lous" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ASQ-sm-nMm">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
